@@ -1,5 +1,21 @@
 import Link from "next/link";
 
+// Add this component definition at the top of the file, after the imports
+const MissionBox = () => (
+  <div className="bg-black bg-opacity-40 backdrop-blur-sm p-6 sm:p-8 rounded-lg text-white">
+    <h3 className="text-xl font-semibold mb-4 flex items-center">
+      <span className="h-2 w-2 rounded-full bg-green-400 mr-2"></span>
+      Our Mission
+    </h3>
+    
+    <ul className="list-disc pl-6 space-y-2 mb-6">
+      <li>More natural, regeneratively grown food to more people.</li>
+      <li>More independence for farmers.</li>
+      <li>Less than a day to set up.</li>
+    </ul>
+  </div>
+);
+
 export default function Home() {
   return (
     <div>
@@ -37,48 +53,43 @@ export default function Home() {
       </header>
       
       {/* Hero Section */}
-      <section className="relative h-screen">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/little-farma-hero.webp')` }}>
+      <section className="relative min-h-screen">
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url('/little-farma-hero-v2.webp')` }}>
           <div className="absolute inset-0 bg-opacity-40"></div>
         </div>
         
-        <div className="relative h-full flex items-center">
-          <div className="container mx-auto px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="relative h-full flex items-center pt-24 pb-12">
+          <div className="container mx-auto px-4 sm:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
               {/* Hero Left Content */}
               <div className="text-white">
-                <div className="inline-block mb-4 px-4 py-2 rounded-full bg-white bg-opacity-20 backdrop-blur-sm">
-                  <span className="text-sm text-black">Supporting Small-scale Regenerative Agriculture</span>
+                <div className="inline-block mb-3 sm:mb-4 px-2 py-1 sm:px-4 sm:py-2 rounded-full bg-white bg-opacity-20 backdrop-blur-sm">
+                  <span className="text-xs sm:text-sm text-black">Supporting Regenerative Agriculture</span>
                 </div>
                 
-                <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                  Bringing Independence to Your Farming Journey.
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
+                  Bringing Greater Independence to Your Farming Journey.
                 </h1>
                 
-                <p className="text-lg mb-8 opacity-90">
-                  Get your product to your loyal customers with minimal setup.
+                <p className="text-base sm:text-lg mb-6 sm:mb-8 opacity-90">
+                  Get your product to your loyal customers with minimal setup and greater reach.
                 </p>
+
+                <div className="lg:hidden block mb-8">
+                  <MissionBox />
+                </div>
                 
-                <Link href="mailto:rob@littlefarma.com" className="inline-flex items-center bg-green-400 hover:bg-green-500 text-white px-8 py-3 rounded-full text-lg font-medium">
+                <Link href="mailto:rob@littlefarma.com" className="inline-flex items-center bg-green-400 hover:bg-green-500 text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full text-base sm:text-lg font-medium">
                   Contact Me
-                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <svg className="ml-2 w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                   </svg>
                 </Link>
               </div>
               
               {/* Hero Right Content - Mission Box */}
-              <div className="bg-black bg-opacity-40 backdrop-blur-sm p-8 rounded-lg text-white hidden lg:block">
-                <h3 className="text-xl font-semibold mb-4 flex items-center">
-                  <span className="h-2 w-2 rounded-full bg-green-400 mr-2"></span>
-                  Our Mission
-                </h3>
-                
-                <ul className="list-disc pl-6 space-y-2 mb-6">
-                  <li>More natural, regeneratively grown food to more people.</li>
-                  <li>More independence for farmers.</li>
-                  <li>Less than a day to set up.</li>
-                </ul>
+              <div className="hidden lg:block mb-8">
+                <MissionBox />
               </div>
             </div>
           </div>
