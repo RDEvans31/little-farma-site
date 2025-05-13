@@ -207,10 +207,10 @@ export default function Home() {
 
             <div className="lg:col-span-2">
               <h4 className="text-2xl md:text-2xl font-bold mb-6">
-                "Today, it is almost impossible for small farms to compete with
-                industrial scale farms, even without taking the environment into
-                consideration. The decline of the small family farm is evident
-                everywhere."
+                &quot;Today, it is almost impossible for small farms to compete
+                with industrial scale farms, even without taking the environment
+                into consideration. The decline of the small family farm is
+                evident everywhere.&quot;
               </h4>
               <p className="mb-8">
                 - Rachel Ward, from the documentary{" "}
@@ -237,7 +237,7 @@ export default function Home() {
                 href="mailto:rob@littlefarma.io"
                 className="inline-block border border-gray-300 hover:border-gray-400 px-6 py-3 rounded-full text-gray-700 font-medium"
               >
-                Drop me an email, I'd love to hear your story.
+                Drop me an email, I&apos;d love to hear your story.
               </Link>
             </div>
           </div>
