@@ -1,6 +1,7 @@
 import CardValue from "@/components/CardValue";
 import Link from "next/link";
 import Image from "next/image";
+import { ShoppingCart, Users, Handshake, Star } from "lucide-react";
 
 // Add this component definition at the top of the file, after the imports
 const MissionBox = () => (
@@ -96,8 +97,8 @@ export default function Home() {
 
                 <p className="text-base sm:text-lg mb-6 sm:mb-8 opacity-90">
                   Empowering small-scale regenerative farms to better serve
-                  their customers, with independence from large corporate
-                  systems.
+                  their loyal customers, with independence from large
+                  corporate systems.
                 </p>
 
                 <div className="lg:hidden block mb-8">
@@ -188,6 +189,43 @@ export default function Home() {
                     }
                     description="We empower farmers to build loyal communities that support them with recurring subscriptions"
                   />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <div>
+              <h4 className="text-3xl md:text-4xl font-bold mb-6">
+                Who Little Farma is for small-scale regenerative farmers who want to:
+              </h4>
+            </div>
+
+            <div className="lg:col-span-2">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div className="flex flex-col items-start sm:items-center text-left sm:text-center">
+                  <div className="mb-4 rounded-full bg-green-100 p-3"><ShoppingCart className="w-8 h-8 text-green-700" /></div>
+                  <h3 className="font-bold text-lg mb-2">Provide Directly</h3>
+                  <p className="text-gray-600">Sell directly to your customers, with independence from large corporate systems.</p>
+                </div>
+                <div className="flex flex-col items-start sm:items-center text-left sm:text-center">
+                  <div className="mb-4 rounded-full bg-yellow-100 p-3"><Users className="w-8 h-8 text-yellow-700" /></div>
+                  <h3 className="font-bold text-lg mb-2">Build Community</h3>
+                  <p className="text-gray-600">Build loyal communities that support you with a recurring membership.</p>
+                </div>
+                <div className="flex flex-col items-start sm:items-center text-left sm:text-center">
+                  <div className="mb-4 rounded-full bg-red-100 p-3"><Handshake className="w-8 h-8 text-red-700" /></div>
+                  <h3 className="font-bold text-lg mb-2">Serve Better</h3>
+                  <p className="text-gray-600">Serve your customers better with a smooth and easy sales process.</p>
+                </div>
+                <div className="flex flex-col items-start sm:items-center text-left sm:text-center">
+                  <div className="mb-4 rounded-full bg-purple-100 p-3"><Star className="w-8 h-8 text-purple-700" /></div>
+                  <h3 className="font-bold text-lg mb-2">Members-Only Features</h3>
+                  <p className="text-gray-600">Provide a tight-knit group of loyal members with members-only features.</p>
                 </div>
               </div>
             </div>
