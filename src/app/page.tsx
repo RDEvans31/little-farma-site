@@ -201,7 +201,10 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             <div>
               <h4 className="text-3xl md:text-4xl font-bold mb-6">
-                Who Little Farma is for small-scale regenerative farmers who want to:
+                Who&apos;s it for?
+              </h4>
+              <h4 className="text-xl md:text-2xl font-bold mb-6">
+                Small-scale regenerative farmers that want to:
               </h4>
             </div>
 
