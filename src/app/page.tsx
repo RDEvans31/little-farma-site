@@ -27,24 +27,14 @@ export default function Home() {
         <div className="flex items-center">
           {/* Logo */}
           <div className="flex items-center mr-4">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-sprout-icon lucide-sprout"
-            >
-              <path d="M7 20h10" />
-              <path d="M10 20c5.5-2.5.8-6.4 3-10" />
-              <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z" />
-              <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z" />
-            </svg>
-            <span className="font-semibold text-xl">LittleFarma</span>
+            <Image
+              alt="Little Farma Logo"
+              width={24}
+              height={24}
+              src="/logo/png/white-logo-symbol-only.png"
+              className="mr-2"
+            />
+            <span className="font-semibold text-xl">Little Farma</span>
           </div>
 
           {/* Contact info */}
@@ -97,8 +87,8 @@ export default function Home() {
 
                 <p className="text-base sm:text-lg mb-6 sm:mb-8 opacity-90">
                   Empowering small-scale regenerative farms to better serve
-                  their loyal customers, with independence from large
-                  corporate systems.
+                  their loyal customers, with independence from large corporate
+                  systems.
                 </p>
 
                 <div className="lg:hidden block mb-8">
@@ -211,24 +201,46 @@ export default function Home() {
             <div className="lg:col-span-2">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div className="flex flex-col items-start sm:items-center text-left sm:text-center">
-                  <div className="mb-4 rounded-full bg-green-100 p-3"><ShoppingCart className="w-8 h-8 text-green-700" /></div>
+                  <div className="mb-4 rounded-full bg-green-100 p-3">
+                    <ShoppingCart className="w-8 h-8 text-green-700" />
+                  </div>
                   <h3 className="font-bold text-lg mb-2">Provide Directly</h3>
-                  <p className="text-gray-600">Sell directly to your customers, with independence from large corporate systems.</p>
+                  <p className="text-gray-600">
+                    Sell directly to your customers, with independence from
+                    large corporate systems.
+                  </p>
                 </div>
                 <div className="flex flex-col items-start sm:items-center text-left sm:text-center">
-                  <div className="mb-4 rounded-full bg-yellow-100 p-3"><Users className="w-8 h-8 text-yellow-700" /></div>
+                  <div className="mb-4 rounded-full bg-yellow-100 p-3">
+                    <Users className="w-8 h-8 text-yellow-700" />
+                  </div>
                   <h3 className="font-bold text-lg mb-2">Build Community</h3>
-                  <p className="text-gray-600">Build loyal communities that support you with a recurring membership.</p>
+                  <p className="text-gray-600">
+                    Build loyal communities that support you with a recurring
+                    membership.
+                  </p>
                 </div>
                 <div className="flex flex-col items-start sm:items-center text-left sm:text-center">
-                  <div className="mb-4 rounded-full bg-red-100 p-3"><Handshake className="w-8 h-8 text-red-700" /></div>
+                  <div className="mb-4 rounded-full bg-red-100 p-3">
+                    <Handshake className="w-8 h-8 text-red-700" />
+                  </div>
                   <h3 className="font-bold text-lg mb-2">Serve Better</h3>
-                  <p className="text-gray-600">Serve your customers better with a smooth and easy sales process.</p>
+                  <p className="text-gray-600">
+                    Serve your customers better with a smooth and easy sales
+                    process.
+                  </p>
                 </div>
                 <div className="flex flex-col items-start sm:items-center text-left sm:text-center">
-                  <div className="mb-4 rounded-full bg-purple-100 p-3"><Star className="w-8 h-8 text-purple-700" /></div>
-                  <h3 className="font-bold text-lg mb-2">Members-Only Features</h3>
-                  <p className="text-gray-600">Provide a tight-knit group of loyal members with members-only features.</p>
+                  <div className="mb-4 rounded-full bg-purple-100 p-3">
+                    <Star className="w-8 h-8 text-purple-700" />
+                  </div>
+                  <h3 className="font-bold text-lg mb-2">
+                    Members-Only Features
+                  </h3>
+                  <p className="text-gray-600">
+                    Provide a tight-knit group of loyal members with
+                    members-only features.
+                  </p>
                 </div>
               </div>
             </div>
@@ -242,7 +254,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             <div>
               <h4 className="text-3xl md:text-4xl font-bold mb-6">
-                Why Little Farma Exist:
+                Why Little Farma Exists:
               </h4>
             </div>
 
