@@ -4,20 +4,42 @@ import Image from "next/image";
 import { ShoppingCart, Users, Handshake, Star } from "lucide-react";
 
 // Add this component definition at the top of the file, after the imports
-const MissionBox = () => (
-  <div className="bg-black bg-opacity-40 backdrop-blur-sm p-6 sm:p-8 rounded-lg text-white">
-    <h3 className="text-xl font-semibold mb-4 flex items-center">
-      <span className="h-2 w-2 rounded-full bg-green-400 mr-2"></span>
-      Our Mission
-    </h3>
+const MissionBox = () => {
+  return (
+    <div className="bg-black bg-opacity-40 backdrop-blur-sm p-6 sm:p-8 rounded-lg text-white">
+      <h3 className="text-xl font-semibold mb-4 flex items-center">
+        <span className="h-2 w-2 rounded-full bg-green-400 mr-2"></span>
+        Our Mission
+      </h3>
 
-    <ul className="list-disc pl-6 space-y-2 mb-6">
-      <li>More natural, regeneratively grown food to more people.</li>
-      <li>More independence for small-scale farmers.</li>
-      <li>Less than an hour to set up.</li>
-    </ul>
-  </div>
-);
+      <ul className="list-disc pl-6 space-y-2 mb-6">
+        <li>
+          <span className="underline font-bold">Financial resilience</span> for
+          small-scale farmers
+        </li>
+        <li>
+          Long-term improved{" "}
+          <span className="underline font-bold">soil biodiversity.</span>
+        </li>
+        <li>
+          More communities built around{" "}
+          <span className="underline font-bold">food sovereignty</span>
+        </li>
+        {/* <li>
+          <span className="underline">Empower people</span> that care deeply
+          about the food they eat to access the highest quality produce.
+        </li>
+        <li>
+          Enable consumers to the support the projects that reflect their
+          values.
+        </li>
+        <li>
+          A simple and enjoyable process for both farmers and their community
+        </li> */}
+      </ul>
+    </div>
+  );
+};
 
 export default function Home() {
   return (
@@ -75,7 +97,7 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
               {/* Hero Left Content */}
               <div className="text-white">
-                <div className="inline-block mb-3 sm:mb-4 px-2 py-1 sm:px-4 sm:py-2 rounded-full bg-white bg-opacity-20 backdrop-blur-sm">
+                <div className="inline-block mb-3 sm:mb-4 px-2 pb-1 sm:px-4 sm:py-2 rounded-full bg-white bg-opacity-20 backdrop-blur-sm">
                   <span className="text-xs sm:text-sm text-black">
                     Supporting Regenerative Agriculture
                   </span>
@@ -86,9 +108,8 @@ export default function Home() {
                 </h1>
 
                 <p className="text-base sm:text-lg mb-6 sm:mb-8 opacity-90">
-                  Empowering small-scale regenerative farms to better serve
-                  their loyal customers, with independence from large corporate
-                  systems.
+                  Empowering small-scale permaculture and regenerative farms to
+                  better serve their loyal communities.
                 </p>
 
                 <div className="lg:hidden block mb-8">
@@ -206,8 +227,8 @@ export default function Home() {
                   </div>
                   <h3 className="font-bold text-lg mb-2">Provide Directly</h3>
                   <p className="text-gray-600">
-                    Sell directly to your customers, with independence from
-                    large corporate systems.
+                    Distribute directly to your community, with independence
+                    from large corporate systems.
                   </p>
                 </div>
                 <div className="flex flex-col items-start sm:items-center text-left sm:text-center">
@@ -226,8 +247,7 @@ export default function Home() {
                   </div>
                   <h3 className="font-bold text-lg mb-2">Serve Better</h3>
                   <p className="text-gray-600">
-                    Serve your customers better with a smooth and easy sales
-                    process.
+                    Serve your community better with a smooth and easy process.
                   </p>
                 </div>
                 <div className="flex flex-col items-start sm:items-center text-left sm:text-center">
