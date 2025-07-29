@@ -1,7 +1,7 @@
 import CardValue from "@/components/CardValue";
 import Link from "next/link";
 import Image from "next/image";
-import { ShoppingCart, Users, Handshake, Star } from "lucide-react";
+import { ShoppingCart, Users, Handshake, Star, Waypoints } from "lucide-react";
 
 // Add this component definition at the top of the file, after the imports
 const MissionBox = () => {
@@ -9,7 +9,7 @@ const MissionBox = () => {
     <div className="bg-black bg-opacity-40 backdrop-blur-sm p-6 sm:p-8 rounded-lg text-white">
       <h3 className="text-xl font-semibold mb-4 flex items-center">
         <span className="h-2 w-2 rounded-full bg-green-400 mr-2"></span>
-        Our Mission
+        The Mission
       </h3>
 
       <ul className="list-disc pl-6 space-y-2 mb-6">
@@ -18,11 +18,15 @@ const MissionBox = () => {
           small-scale farmers
         </li>
         <li>
+          More people eating{" "}
+          <span className="underline font-bold">real food.</span>
+        </li>
+        <li>
           Long-term improved{" "}
           <span className="underline font-bold">soil biodiversity.</span>
         </li>
         <li>
-          More communities built around{" "}
+          Communities built around{" "}
           <span className="underline font-bold">food sovereignty</span>
         </li>
         {/* <li>
@@ -84,32 +88,32 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen">
-        <div
+      <section className="relative bg-emerald-950">
+        {/* <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url('/little-farma-hero-v2.webp')` }}
         >
           <div className="absolute inset-0 bg-opacity-40"></div>
-        </div>
+        </div> */}
 
-        <div className="relative h-full flex items-center pt-24 pb-12">
+        <div className="relative flex items-center pt-24 pb-12">
           <div className="container mx-auto px-4 sm:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
               {/* Hero Left Content */}
               <div className="text-white">
-                <div className="inline-block mb-3 sm:mb-4 px-2 pb-1 sm:px-4 sm:py-2 rounded-full bg-white bg-opacity-20 backdrop-blur-sm">
-                  <span className="text-xs sm:text-sm text-black">
-                    Supporting Regenerative Agriculture
-                  </span>
-                </div>
-
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
-                  Building loyal communities around regenerative-farming.
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-10 leading-tight">
+                  Build your{" "}
+                  <span className="italic text-green-300">Sovereign</span>{" "}
+                  Community
                 </h1>
 
                 <p className="text-base sm:text-lg mb-6 sm:mb-8 opacity-90">
                   Empowering small-scale permaculture and regenerative farms to
-                  better serve their loyal communities.
+                  build{" "}
+                  <span className="italic font-bold">
+                    decentralised, human-centric communities
+                  </span>
+                  .
                 </p>
 
                 <div className="lg:hidden block mb-8">
@@ -247,7 +251,8 @@ export default function Home() {
                   </div>
                   <h3 className="font-bold text-lg mb-2">Serve Better</h3>
                   <p className="text-gray-600">
-                    Serve your community better with a smooth and easy process.
+                    Little Farma makes engaging with your community smooth and
+                    easy.
                   </p>
                 </div>
                 <div className="flex flex-col items-start sm:items-center text-left sm:text-center">
@@ -260,6 +265,17 @@ export default function Home() {
                   <p className="text-gray-600">
                     Provide a tight-knit group of loyal members with
                     members-only features.
+                  </p>
+                </div>
+                <div className="flex flex-col items-start sm:items-center text-left sm:text-center">
+                  <div className="mb-4 rounded-full bg-blue-100 p-3">
+                    <Waypoints className="w-8 h-8 text-blue-700" />
+                  </div>
+                  <h3 className="font-bold text-lg mb-2">
+                    Create Independence
+                  </h3>
+                  <p className="text-gray-600">
+                    Build a thriving ecosystem outside the mainstream.
                   </p>
                 </div>
               </div>
@@ -308,9 +324,9 @@ export default function Home() {
 
               <Link
                 href="mailto:rob@littlefarma.io"
-                className="inline-block border border-gray-300 hover:border-gray-400 px-6 py-3 rounded-full text-gray-700 font-medium"
+                className="bg-green-950 inline-block border px-6 py-3 rounded-full text-white font-medium"
               >
-                Drop me an email, I&apos;d love to hear your story.
+                Send me an email for early access
               </Link>
             </div>
           </div>
